@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Simples com JavaScript</title>
+</head>
+<body>
+    <h1>Bem-vindo à minha página!</h1>
+    <button id="botaoClique">Clique em mim!</button>
+    <p id="mensagem"></p>
+
+    <script>
+        // Selecionando o botão e o parágrafo
+        const botao = document.getElementById('botaoClique');
+        const mensagem = document.getElementById('mensagem');
+
+        // Adicionando um evento de clique ao botão
+        botao.addEventListener('click', function() {
+            mensagem.textContent = 'Você clicou no botão!';
+        });
+    </script>
+</body>
+</html>
